@@ -1,0 +1,50 @@
+[
+  {
+    "trainingId": "TRN001",
+    "title": "Full Stack Web Development",
+    "image": "https://picsum.photos/seed/ccs-webdev/800/500",
+    "duration": "4 months",
+    "mode": "Online + Classroom",
+    "price": "₹24,999",
+    "instructor": "Rahul Verma",
+    "description": "Learn HTML, CSS, JavaScript, React and Node.js from scratch and build a job-ready portfolio of real projects.",
+    "syllabus": "HTML & CSS foundations | JavaScript deep dive | React and hooks | Node.js and Express | MongoDB | Deployment and Git | Capstone project",
+    "featured": "TRUE"
+  },
+  {
+    "trainingId": "TRN002",
+    "title": "Python & Data Analytics",
+    "image": "https://picsum.photos/seed/ccs-python/800/500",
+    "duration": "3 months",
+    "mode": "Online",
+    "price": "₹18,999",
+    "instructor": "Priya Singh",
+    "description": "Master Python, Pandas, SQL and dashboarding to launch a career in data analytics.",
+    "syllabus": "Python basics | Pandas and NumPy | SQL for analysts | Data visualization | Excel to Python workflows | Mini projects",
+    "featured": "TRUE"
+  },
+  {
+    "trainingId": "TRN003",
+    "title": "Spoken English & Interview Skills",
+    "image": "https://picsum.photos/seed/ccs-english/800/500",
+    "duration": "6 weeks",
+    "mode": "Classroom",
+    "price": "₹4,999",
+    "instructor": "Anjali Kumari",
+    "description": "Build fluency, confidence and interview presence with daily practice sessions and mock interviews.",
+    "syllabus": "Grammar refresh | Daily conversation practice | Group discussions | Resume walkthrough | Mock interviews with feedback",
+    "featured": "TRUE"
+  },
+  {
+    "trainingId": "TRN004",
+    "title": "Tally ERP with GST",
+    "image": "https://picsum.photos/seed/ccs-tally/800/500",
+    "duration": "2 months",
+    "mode": "Classroom",
+    "price": "₹6,499",
+    "instructor": "Manoj Gupta",
+    "description": "Hands-on accounting training covering Tally ERP 9, GST filing and payroll for commerce students and job seekers.",
+    "syllabus": "Tally fundamentals | Ledgers and vouchers | GST returns | TDS | Payroll | Practical assignments",
+    "featured": "FALSE"
+  }
+]

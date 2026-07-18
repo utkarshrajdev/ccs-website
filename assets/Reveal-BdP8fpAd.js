@@ -1,0 +1,1 @@
+import{j as a,m as n}from"./motion-DmLtCZrq.js";function s({children:i,delay:t=0,className:e="",...o}){return a.jsx(n.div,{initial:{opacity:0,y:24},whileInView:{opacity:1,y:0},viewport:{once:!0,margin:"-40px"},transition:{duration:.5,delay:t,ease:"easeOut"},className:e,...o,children:i})}export{s as R};

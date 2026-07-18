@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Redirecting…</title>
+    <script>
+      // GitHub Pages SPA fallback: remember the requested path, then load the app shell.
+      var base = document.currentScript.getAttribute('data-base') || '/';
+      sessionStorage.setItem('spa-redirect', location.pathname + location.search + location.hash);
+      // Redirect to the site root (adjust if deploying under a repo sub-path)
+      var segments = location.pathname.split('/').filter(Boolean);
+      var root = location.origin + (segments.length > 0 && location.hostname.endsWith('github.io') ? '/' + segments[0] + '/' : '/');
+      location.replace(root);
+    </script>
+  </head>
+  <body></body>
+</html>
