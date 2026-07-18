@@ -1,0 +1,58 @@
+[
+  {
+    "title": "Study Abroad",
+    "image": "https://picsum.photos/seed/ccs-abroad/800/500",
+    "description": "End-to-end guidance for studying in the UK, Canada, Australia and Europe — from university shortlisting to visa filing.",
+    "features": "University shortlisting | SOP and LOR guidance | Visa documentation | Education loan assistance | Pre-departure briefing",
+    "benefits": "Higher visa success rate | Scholarship guidance | Trusted university partners | Post-landing support",
+    "ctaText": "Plan My Study Abroad"
+  },
+  {
+    "title": "Career Guidance",
+    "image": "https://picsum.photos/seed/ccs-career/800/500",
+    "description": "One-on-one counselling sessions to help students and professionals choose the right career path with clarity.",
+    "features": "Psychometric assessment | 1:1 counselling session | Career roadmap document | Follow-up review",
+    "benefits": "Clarity on strengths | Realistic career plan | Industry-aligned advice",
+    "ctaText": "Book a Session"
+  },
+  {
+    "title": "Resume Building",
+    "image": "https://picsum.photos/seed/ccs-resume/800/500",
+    "description": "ATS-friendly, professionally written resumes and LinkedIn profiles that get shortlisted.",
+    "features": "ATS-optimized resume | Cover letter | LinkedIn profile makeover | Unlimited revisions for 15 days",
+    "benefits": "More interview calls | Professional first impression | Keyword-optimized profile",
+    "ctaText": "Get My Resume"
+  },
+  {
+    "title": "Interview Preparation",
+    "image": "https://picsum.photos/seed/ccs-interview/800/500",
+    "description": "Mock interviews with real recruiters, detailed feedback and confidence-building practice.",
+    "features": "HR + technical mock rounds | Recorded feedback | Common question bank | Body language coaching",
+    "benefits": "Reduced interview anxiety | Sharper answers | Better salary negotiation",
+    "ctaText": "Start Preparing"
+  },
+  {
+    "title": "Placement Assistance",
+    "image": "https://picsum.photos/seed/ccs-placement/800/500",
+    "description": "Direct connections to our verified recruiter network with active openings across India.",
+    "features": "Profile matching | Direct recruiter referrals | Application tracking | Offer negotiation support",
+    "benefits": "Faster job search | Verified employers only | Dedicated placement coordinator",
+    "ctaText": "Find Me a Job"
+  },
+  {
+    "title": "Corporate Training",
+    "image": "https://picsum.photos/seed/ccs-corporate/800/500",
+    "description": "Customized upskilling programs for companies — communication, sales, technology and leadership.",
+    "features": "Need-analysis workshop | Custom curriculum | On-site or online delivery | Post-training assessment",
+    "benefits": "Measurable skill growth | Higher team productivity | Flexible scheduling",
+    "ctaText": "Train My Team"
+  },
+  {
+    "title": "HR Consulting",
+    "image": "https://picsum.photos/seed/ccs-hr/800/500",
+    "description": "Recruitment, payroll and HR policy support for startups and SMEs that need an HR function without the overhead.",
+    "features": "End-to-end recruitment | Payroll setup | HR policy drafting | Compliance guidance",
+    "benefits": "Lower hiring costs | Compliant HR processes | Scalable HR support",
+    "ctaText": "Talk to an HR Expert"
+  }
+]

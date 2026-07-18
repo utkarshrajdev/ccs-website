@@ -1,0 +1,8 @@
+[
+  { "company": "TechNova", "logo": "https://ui-avatars.com/api/?name=TechNova&background=2563eb&color=fff&size=128&length=2", "website": "https://example.com" },
+  { "company": "Bharat Manpower", "logo": "https://ui-avatars.com/api/?name=Bharat+Manpower&background=0ea5e9&color=fff&size=128", "website": "https://example.com" },
+  { "company": "GrowthGear", "logo": "https://ui-avatars.com/api/?name=Growth+Gear&background=f59e0b&color=fff&size=128", "website": "https://example.com" },
+  { "company": "EduRise", "logo": "https://ui-avatars.com/api/?name=Edu+Rise&background=10b981&color=fff&size=128", "website": "https://example.com" },
+  { "company": "CallBridge", "logo": "https://ui-avatars.com/api/?name=Call+Bridge&background=8b5cf6&color=fff&size=128", "website": "https://example.com" },
+  { "company": "Shree Balaji", "logo": "https://ui-avatars.com/api/?name=Shree+Balaji&background=ef4444&color=fff&size=128", "website": "https://example.com" }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Sunita Devi",
+    "photo": "https://ui-avatars.com/api/?name=Sunita+Devi&background=1d4ed8&color=fff&size=128",
+    "designation": "HR Executive",
+    "company": "Bharat Manpower Ltd",
+    "rating": "5",
+    "review": "CCS rebuilt my resume and prepared me for interviews. I got placed within three weeks of finishing their program."
+  },
+  {
+    "name": "Amit Kumar",
+    "photo": "https://ui-avatars.com/api/?name=Amit+Kumar&background=0ea5e9&color=fff&size=128",
+    "designation": "Frontend Developer",
+    "company": "TechNova Solutions",
+    "rating": "5",
+    "review": "The Full Stack course was completely hands-on. The mentors treated my doubts seriously and the placement team followed up until I signed my offer."
+  },
+  {
+    "name": "Neha Sharma",
+    "photo": "https://ui-avatars.com/api/?name=Neha+Sharma&background=f59e0b&color=fff&size=128",
+    "designation": "MSc Student",
+    "company": "University of Leeds, UK",
+    "rating": "5",
+    "review": "From shortlisting universities to my visa interview, the study abroad team guided me at every step. I couldn't have done it alone."
+  }
+]

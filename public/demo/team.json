@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Utkarsh Raj",
+    "photo": "https://ui-avatars.com/api/?name=Utkarsh+Raj&background=1d4ed8&color=fff&size=256",
+    "role": "Founder & Director",
+    "linkedin": "https://www.linkedin.com",
+    "bio": "Founded CCS to bring honest, quality career services to Champaran and beyond."
+  },
+  {
+    "name": "Ritu Kumari",
+    "photo": "https://ui-avatars.com/api/?name=Ritu+Kumari&background=0ea5e9&color=fff&size=256",
+    "role": "Head of Placements",
+    "linkedin": "https://www.linkedin.com",
+    "bio": "Manages our recruiter network and has placed 500+ candidates across India."
+  },
+  {
+    "name": "Saurabh Jha",
+    "photo": "https://ui-avatars.com/api/?name=Saurabh+Jha&background=f59e0b&color=fff&size=256",
+    "role": "Lead Trainer",
+    "linkedin": "https://www.linkedin.com",
+    "bio": "10 years of industry experience in software development and corporate training."
+  }
+]

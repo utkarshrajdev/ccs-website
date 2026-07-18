@@ -1,0 +1,22 @@
+[
+  {
+    "question": "Do you charge job seekers for placements?",
+    "answer": "No. Our placement assistance is free for registered candidates. We only charge for optional services like training programs, resume writing and study abroad processing."
+  },
+  {
+    "question": "Are the job openings on this site verified?",
+    "answer": "Yes. Every opening is confirmed directly with the hiring company before it is published, and we remove listings as soon as positions are filled."
+  },
+  {
+    "question": "Can I attend trainings online?",
+    "answer": "Most of our programs are available in online, classroom and hybrid modes. Check the 'Mode' field on any training card for details."
+  },
+  {
+    "question": "Which countries do you support for study abroad?",
+    "answer": "We currently process applications for the UK, Canada, Australia, Ireland, Germany and other European destinations."
+  },
+  {
+    "question": "How do I apply for a job?",
+    "answer": "Open the job details page and click Apply. If the company uses an external portal you'll be redirected there; otherwise our team will contact you to complete the process."
+  }
+]
