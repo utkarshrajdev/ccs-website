@@ -34,13 +34,9 @@ export default function Navbar() {
       }`}
     >
       <nav className="container-x flex h-16 items-center justify-between gap-4" aria-label="Main navigation">
-        <Link to="/" className="flex items-center gap-2.5" aria-label={`${SITE.name} - home`}>
-          <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-primary-600 font-display text-sm font-bold text-white">
-            {SITE.shortName}
-          </span>
-          <span className="hidden font-display text-base font-bold text-slate-900 dark:text-white sm:block">
-            Champaran <span className="text-primary-600">Consultancy</span>
-          </span>
+        <Link to="/" className="flex items-center" aria-label={`${SITE.name} - home`}>
+          <img src="/icon.png" alt="" className="h-9 w-9 sm:hidden" />
+          <img src="/logo.png" alt={SITE.name} className="hidden h-8 w-auto sm:block" />
         </Link>
 
         {/* Desktop links */}
