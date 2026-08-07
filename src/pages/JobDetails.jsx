@@ -131,7 +131,7 @@ export default function JobDetails() {
                   <p className="mb-1 flex items-center gap-1.5 text-xs text-slate-400">
                     <Icon aria-hidden="true" /> {label}
                   </p>
-                  <p className="text-sm font-semibold">{value || '—'}</p>
+                  <p className="text-sm font-semibold">{value || '-'}</p>
                 </div>
               ))}
             </div>
@@ -167,9 +167,16 @@ export default function JobDetails() {
               </section>
             )}
 
-            <Button href={job.applyLink || undefined} to={job.applyLink ? undefined : '/contact'} size="lg" className="w-full sm:w-auto">
-              Apply Now
-            </Button>
+            <div className="flex flex-wrap gap-3">
+              <Button to={`/apply?jobId=${job.jobId}`} size="lg" track={`apply_${job.jobId}`} className="w-full sm:w-auto">
+                Apply Now
+              </Button>
+              {job.applyLink && (
+                <Button href={job.applyLink} variant="secondary" size="lg" className="w-full sm:w-auto">
+                  Apply on Company Site
+                </Button>
+              )}
+            </div>
           </article>
         </Reveal>
 

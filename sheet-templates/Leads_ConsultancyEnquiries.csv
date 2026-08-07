@@ -1,0 +1,2 @@
+Timestamp,Name,Email,Phone,Service,Message,UTM Source,UTM Medium,UTM Campaign,UTM Content,UTM Term,Referrer,Landing Page,Page,Source
+2026-08-01 12:30,Example Lead,lead@example.com,+91 98765 43210,Study Abroad,Want to study in Canada,google,cpc,study-abroad-q3,,study abroad consultant,,https://site.com/consultancy/enquire?utm_source=google,https://site.com/consultancy/enquire,google / cpc / study-abroad-q3

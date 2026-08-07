@@ -13,7 +13,7 @@ import ErrorState from '../components/common/ErrorState';
 import { SkeletonGrid } from '../components/common/SkeletonCard';
 
 export default function Trainings() {
-  useSeo({ title: 'Professional Trainings', description: 'Industry-ready training programs — online and classroom — taught by experienced mentors.', path: '/trainings' });
+  useSeo({ title: 'Professional Trainings', description: 'Industry-ready training programs - online and classroom - taught by experienced mentors.', path: '/trainings' });
 
   const { data: trainings, loading, error, refetch } = useSheetData(getTrainings);
   const [query, setQuery] = useState('');

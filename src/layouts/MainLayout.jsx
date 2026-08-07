@@ -7,13 +7,21 @@ import BackToTop from '../components/common/BackToTop';
 import WhatsAppFloat from '../components/common/WhatsAppFloat';
 import Loader from '../components/common/Loader';
 import { ToastProvider } from '../components/common/Toast';
+import { captureAttribution, initAnalytics, trackPageView } from '../utils/tracking';
 
 export default function MainLayout() {
   const { pathname } = useLocation();
 
-  // Scroll to top on route change
+  // Analytics + marketing attribution (runs once)
+  useEffect(() => {
+    captureAttribution();
+    initAnalytics();
+  }, []);
+
+  // Scroll to top + SPA page view on route change
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'instant' });
+    trackPageView(pathname);
   }, [pathname]);
 
   return (

@@ -36,8 +36,13 @@ export default function Footer() {
       <div className="container-x grid gap-10 py-14 sm:grid-cols-2 lg:grid-cols-4">
         {/* Brand */}
         <div>
-          <div className="mb-4">
-            <img src="/logo.png" alt={SITE.name} className="h-9 w-auto" />
+          <div className="mb-4 flex items-center gap-2.5">
+            <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-primary-600 font-display text-sm font-bold text-white">
+              {SITE.shortName}
+            </span>
+            <span className="font-display font-bold text-slate-900 dark:text-white">
+              Champaran Consultancy
+            </span>
           </div>
           <p className="mb-5 text-sm leading-relaxed text-slate-500 dark:text-slate-400">
             Your trusted partner for jobs, trainings, study abroad and career growth.

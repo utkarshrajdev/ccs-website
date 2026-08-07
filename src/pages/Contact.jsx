@@ -1,20 +1,17 @@
-import { useState } from 'react';
 import { FaFacebook, FaInstagram, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
-import { FiMail, FiMapPin, FiPhone, FiSend } from 'react-icons/fi';
+import { FiMail, FiMapPin, FiPhone } from 'react-icons/fi';
 import useSeo from '../hooks/useSeo';
 import useSheetData from '../hooks/useSheetData';
 import { getContactInfo } from '../services/sheetsService';
+import { FORM_TYPES } from '../services/leadService';
 import Breadcrumbs from '../components/common/Breadcrumbs';
-import Button from '../components/common/Button';
 import Reveal from '../components/common/Reveal';
-import { useToast } from '../components/common/Toast';
+import LeadForm from '../components/forms/LeadForm';
 
 export default function Contact() {
-  useSeo({ title: 'Contact Us', description: 'Get in touch with Champaran Consultancy Services — phone, email, WhatsApp or visit our office.', path: '/contact' });
+  useSeo({ title: 'Contact Us', description: 'Get in touch with Champaran Consultancy Services - phone, email, WhatsApp or visit our office.', path: '/contact' });
 
   const { data: contact } = useSheetData(getContactInfo);
-  const showToast = useToast();
-  const [form, setForm] = useState({ name: '', email: '', phone: '', message: '' });
 
   const socials = [
     { icon: FaFacebook, href: contact?.facebook, label: 'Facebook' },
@@ -23,17 +20,6 @@ export default function Contact() {
   ].filter((s) => s.href);
 
   const whatsappNumber = String(contact?.whatsapp || '').replace(/[^0-9]/g, '');
-
-  // Frontend-only form: opens the visitor's email client with a pre-filled message.
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const subject = encodeURIComponent(`Website enquiry from ${form.name}`);
-    const body = encodeURIComponent(`Name: ${form.name}\nEmail: ${form.email}\nPhone: ${form.phone}\n\n${form.message}`);
-    window.location.href = `mailto:${contact?.email || ''}?subject=${subject}&body=${body}`;
-    showToast('Opening your email app…', 'info');
-  };
-
-  const update = (field) => (e) => setForm({ ...form, [field]: e.target.value });
 
   return (
     <div className="container-x section !pt-10">
@@ -104,32 +90,13 @@ export default function Contact() {
           </div>
         </Reveal>
 
-        {/* Form */}
+        {/* Lead capture form */}
         <Reveal delay={0.1}>
-          <form onSubmit={handleSubmit} className="card p-7" aria-label="Contact form">
-            <h2 className="mb-5 text-xl font-bold">Send a Message</h2>
-            <div className="space-y-4">
-              <label className="block text-sm font-medium">
-                Name
-                <input type="text" required value={form.name} onChange={update('name')} className="input mt-1.5" placeholder="Your full name" />
-              </label>
-              <label className="block text-sm font-medium">
-                Email
-                <input type="email" required value={form.email} onChange={update('email')} className="input mt-1.5" placeholder="you@example.com" />
-              </label>
-              <label className="block text-sm font-medium">
-                Phone
-                <input type="tel" value={form.phone} onChange={update('phone')} className="input mt-1.5" placeholder="+91 …" />
-              </label>
-              <label className="block text-sm font-medium">
-                Message
-                <textarea required rows={5} value={form.message} onChange={update('message')} className="input mt-1.5 resize-none" placeholder="How can we help?" />
-              </label>
-              <Button size="lg" className="w-full" type="submit">
-                <FiSend aria-hidden="true" /> Send Message
-              </Button>
-            </div>
-          </form>
+          <LeadForm
+            formType={FORM_TYPES.CONTACT}
+            title="Send a Message"
+            subtitle="Fill this in and we'll get back to you - usually within 24 hours."
+          />
         </Reveal>
       </div>
     </div>

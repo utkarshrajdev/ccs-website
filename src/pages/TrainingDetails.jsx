@@ -93,7 +93,13 @@ export default function TrainingDetails() {
                 </section>
               )}
 
-              <Button to="/contact" size="lg">Enroll Now</Button>
+              <Button
+                to={`/training/enquire?id=${training.trainingId || slugify(training.title)}`}
+                size="lg"
+                track={`enroll_${training.trainingId || slugify(training.title)}`}
+              >
+                Enroll Now
+              </Button>
             </div>
           </article>
         </Reveal>

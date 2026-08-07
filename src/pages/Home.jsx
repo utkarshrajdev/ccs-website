@@ -98,7 +98,7 @@ export default function Home() {
               {hero?.title || 'Build the Career You Deserve'}
             </h1>
             <p className="mb-8 max-w-xl text-lg text-primary-100 md:text-xl">
-              {hero?.subtitle || 'Jobs, trainings and expert guidance — all in one place.'}
+              {hero?.subtitle || 'Jobs, trainings and expert guidance - all in one place.'}
             </p>
             <div className="flex flex-wrap gap-3">
               <Button to={hero?.buttonLink || '/jobs'} variant="accent" size="lg">
@@ -292,13 +292,13 @@ export default function Home() {
             <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-primary-700 to-primary-900 p-10 text-center text-white md:p-16">
               <h2 className="mb-4 text-3xl font-bold text-white md:text-4xl">Ready to Take the Next Step?</h2>
               <p className="mx-auto mb-8 max-w-xl text-primary-100">
-                Talk to our career experts today — whether it's a new job, a new skill, or studying abroad.
+                Talk to our career experts today - whether it's a new job, a new skill, or studying abroad.
               </p>
               <div className="flex flex-wrap justify-center gap-3">
-                <Button to="/contact" variant="accent" size="lg">
+                <Button to="/consultancy/enquire" variant="accent" size="lg" track="home_cta_consultation">
                   <FiCheckCircle aria-hidden="true" /> Get Free Consultation
                 </Button>
-                <Button to="/jobs" size="lg" className="!bg-white/10 !text-white backdrop-blur hover:!bg-white/20">
+                <Button to="/jobs" size="lg" track="home_cta_jobs" className="!bg-white/10 !text-white backdrop-blur hover:!bg-white/20">
                   Browse Jobs
                 </Button>
               </div>

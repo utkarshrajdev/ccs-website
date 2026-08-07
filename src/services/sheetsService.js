@@ -5,7 +5,7 @@ import { camelCase } from '../utils/helpers';
 /**
  * Google Sheets CMS service.
  *
- * Reads a published/public Google Spreadsheet via the gviz JSON endpoint —
+ * Reads a published/public Google Spreadsheet via the gviz JSON endpoint -
  * no API key, no backend. Each sheet tab is one content section.
  *
  * If VITE_GOOGLE_SHEET_ID is not set, the service falls back to bundled

@@ -1,10 +1,12 @@
-# Champaran Consultancy Services (CCS) — Website
+# Champaran Consultancy Services (CCS) - Website
 
-A modern, responsive, production-ready website built with **React + Vite + Tailwind CSS**, using **Google Sheets as a no-backend CMS**. The site owner only edits a Google Sheet — the website shows updated content on the next page refresh.
+A modern, responsive, production-ready website built with **React + Vite + Tailwind CSS**, using **Google Sheets as a no-backend CMS**. The site owner only edits a Google Sheet - the website shows updated content on the next page refresh.
 
 ## Features
 
-- **No backend** — all content comes from Google Sheets (or bundled demo data)
+- **No backend** - all content comes from Google Sheets (or bundled demo data)
+- **Lead capture system** - Job Application (with resume upload to Drive), Training / Consultancy / Contact enquiry forms, powered by Google Apps Script with user + admin HTML email notifications and UTM attribution stored per lead. See **[docs/LEAD_SYSTEM_SETUP.md](./docs/LEAD_SYSTEM_SETUP.md)**
+- **Marketing-ready** - deep-linkable forms (`/apply?jobId=…`, `/training/enquire?id=…`, `/consultancy/enquire`), UTM capture, GA4 + GTM + Meta Pixel with conversion events (`form_started`, `form_submitted`, `resume_uploaded`, `cta_clicked`)
 - Home, Jobs (search / filters / sort / pagination), Job Details, Trainings, Training Details, Consultancy, Blog, Blog Details, About, Contact, 404
 - Dark mode, bookmarks, recently viewed jobs, share/copy job link, toasts, animated counters, scroll progress, scroll-reveal animations, floating WhatsApp button, back-to-top
 - Lazy-loaded routes and images, session caching of sheet data, skeleton loaders, empty/error states
@@ -43,7 +45,7 @@ Broken/missing URLs automatically fall back to a neutral placeholder.
 
 ## 2. Publishing the Sheet
 
-The site reads the sheet through Google's public `gviz` endpoint — no API key needed. The sheet just needs to be viewable by anyone:
+The site reads the sheet through Google's public `gviz` endpoint - no API key needed. The sheet just needs to be viewable by anyone:
 
 1. Click **Share** (top right).
 2. Under *General access*, choose **Anyone with the link → Viewer**.
@@ -63,7 +65,7 @@ VITE_SITE_URL=https://yourusername.github.io/ccs-website
 
 3. Restart `npm run dev`. The site now loads live sheet data. Edit the sheet, refresh the page, and the content updates.
 
-> Sheet data is cached in memory for the session, so each sheet is fetched once per visit — fast and gentle on quotas.
+> Sheet data is cached in memory for the session, so each sheet is fetched once per visit - fast and gentle on quotas.
 
 ## 4. Deployment to GitHub Pages
 
@@ -105,7 +107,7 @@ Say you want a new "Events" section:
    ```
 5. (Demo mode) optionally add `public/demo/events.json` with sample rows.
 
-That's it — no backend, no schema migrations.
+That's it - no backend, no schema migrations.
 
 ## Project Structure
 
@@ -116,16 +118,19 @@ src/
 │   ├── common/         # Button, SectionTitle, Carousel, Accordion, Pagination,
 │   │                   # SearchBox, Filters, Loader, Skeletons, Empty/Error states,
 │   │                   # LazyImage, Toasts, BackToTop, ScrollProgress, WhatsApp float
+│   ├── forms/          # LeadForm - reusable validated lead capture form
 │   ├── Navbar.jsx
 │   ├── Footer.jsx
 │   └── Gallery.jsx
-├── pages/              # One file per route (lazy-loaded)
-├── layouts/            # MainLayout (navbar + footer + floating elements)
-├── services/           # sheetsService.js — the Google Sheets data layer
+├── pages/              # One file per route (lazy-loaded), incl. Apply / enquiry pages
+├── layouts/            # MainLayout (navbar + footer + analytics + floating elements)
+├── services/           # sheetsService.js (content CMS) + leadService.js (form submissions)
 ├── hooks/              # useSheetData, useDebounce, useLocalStorage, useDarkMode, useSeo
-├── utils/              # constants (nav, sheet names), helpers
-└── assets/             # static assets (kept empty by design — images live in Sheets)
-sheet-templates/        # CSV template for every sheet tab
+├── utils/              # constants, helpers, tracking.js (UTM + GA4/GTM/Pixel)
+└── assets/             # static assets (kept empty by design - images live in Sheets)
+apps-script/            # Code.gs - complete Google Apps Script lead backend
+docs/                   # LEAD_SYSTEM_SETUP.md - leads, emails, analytics & ads guide
+sheet-templates/        # CSV templates: content tabs + Leads_* reference layouts
 public/demo/            # sample data used when no Sheet ID is configured
 ```
 

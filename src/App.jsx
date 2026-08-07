@@ -13,6 +13,9 @@ const Blog = lazy(() => import('./pages/Blog'));
 const BlogDetails = lazy(() => import('./pages/BlogDetails'));
 const About = lazy(() => import('./pages/About'));
 const Contact = lazy(() => import('./pages/Contact'));
+const Apply = lazy(() => import('./pages/Apply'));
+const TrainingEnquire = lazy(() => import('./pages/TrainingEnquire'));
+const ConsultancyEnquire = lazy(() => import('./pages/ConsultancyEnquire'));
 const NotFound = lazy(() => import('./pages/NotFound'));
 
 export default function App() {
@@ -22,8 +25,11 @@ export default function App() {
         <Route index element={<Home />} />
         <Route path="jobs" element={<Jobs />} />
         <Route path="jobs/:jobId" element={<JobDetails />} />
+        <Route path="apply" element={<Apply />} />
         <Route path="trainings" element={<Trainings />} />
         <Route path="trainings/:trainingId" element={<TrainingDetails />} />
+        <Route path="training/enquire" element={<TrainingEnquire />} />
+        <Route path="consultancy/enquire" element={<ConsultancyEnquire />} />
         <Route path="consultancy" element={<Consultancy />} />
         <Route path="blog" element={<Blog />} />
         <Route path="blog/:slug" element={<BlogDetails />} />

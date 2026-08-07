@@ -26,7 +26,7 @@ export default function JobCard({ job, delay = 0 }) {
         await navigator.share({ title: job.title, url });
         return;
       } catch {
-        /* user cancelled — fall through to clipboard */
+        /* user cancelled - fall through to clipboard */
       }
     }
     await navigator.clipboard.writeText(url);
@@ -99,7 +99,7 @@ export default function JobCard({ job, delay = 0 }) {
             </p>
           </div>
           <Link
-            to={`/jobs/${job.jobId}`}
+            to={`/apply?jobId=${job.jobId}`}
             className="rounded-xl bg-primary-600 px-4 py-2 text-sm font-semibold text-white hover:bg-primary-700 transition"
           >
             Apply

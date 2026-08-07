@@ -13,7 +13,7 @@ import { SkeletonGrid } from '../components/common/SkeletonCard';
 
 const JOURNEY = [
   { icon: FiFlag, title: 'Our Mission', text: 'To connect talent from every corner of the region with meaningful careers through honest guidance, quality training and verified opportunities.' },
-  { icon: FiEye, title: 'Our Vision', text: 'To become the most trusted career partner in the region — the first name people think of for jobs, skills and global education.' },
+  { icon: FiEye, title: 'Our Vision', text: 'To become the most trusted career partner in the region - the first name people think of for jobs, skills and global education.' },
   { icon: FiCompass, title: 'Our Journey', text: 'From a small counselling desk in Champaran to a full-service consultancy serving job seekers, students and companies across India.' },
 ];
 

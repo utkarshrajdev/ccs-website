@@ -1,0 +1,2 @@
+Timestamp,Name,Email,Phone,Job Id,Job Title,Company,Resume URL,Message,UTM Source,UTM Medium,UTM Campaign,UTM Content,UTM Term,Referrer,Landing Page,Page,Source
+2026-08-01 10:15,Example Applicant,applicant@example.com,+91 98765 43210,JOB001,Frontend Developer (React),TechNova Solutions,https://drive.google.com/file/d/...,Optional message,instagram,paid,july-jobs,creative-a,react jobs,https://instagram.com,https://site.com/apply?jobId=JOB001&utm_source=instagram,https://site.com/apply,instagram / paid / july-jobs

@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { EVENTS, trackEvent } from '../../utils/tracking';
 
 const variants = {
   primary:
@@ -21,27 +22,34 @@ export default function Button({
   size = 'md',
   to,
   href,
+  track, // optional CTA label - fires a cta_clicked analytics event
+  onClick,
   className = '',
   ...props
 }) {
   const classes = `inline-flex items-center justify-center gap-2 rounded-xl font-semibold transition-all duration-200 active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none ${variants[variant]} ${sizes[size]} ${className}`;
 
+  const handleClick = (e) => {
+    if (track) trackEvent(EVENTS.CTA_CLICKED, { cta_label: track, page: window.location.pathname });
+    onClick?.(e);
+  };
+
   if (to) {
     return (
-      <Link to={to} className={classes} {...props}>
+      <Link to={to} className={classes} onClick={handleClick} {...props}>
         {children}
       </Link>
     );
   }
   if (href) {
     return (
-      <a href={href} target="_blank" rel="noopener noreferrer" className={classes} {...props}>
+      <a href={href} target="_blank" rel="noopener noreferrer" className={classes} onClick={handleClick} {...props}>
         {children}
       </a>
     );
   }
   return (
-    <button type="button" className={classes} {...props}>
+    <button type="button" className={classes} onClick={handleClick} {...props}>
       {children}
     </button>
   );

@@ -1,0 +1,2 @@
+Timestamp,Name,Email,Phone,Training,Training Id,Message,UTM Source,UTM Medium,UTM Campaign,UTM Content,UTM Term,Referrer,Landing Page,Page,Source
+2026-08-01 11:00,Example Student,student@example.com,+91 98765 43210,Full Stack Web Development,TRN001,Interested in next batch,facebook,paid,training-aug,,,https://facebook.com,https://site.com/training/enquire?id=TRN001,https://site.com/training/enquire,facebook / paid / training-aug

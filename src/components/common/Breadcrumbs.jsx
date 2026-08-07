@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { FiChevronRight } from 'react-icons/fi';
 
-/** items: [{ label, path? }] — last item is the current page. */
+/** items: [{ label, path? }] - last item is the current page. */
 export default function Breadcrumbs({ items = [] }) {
   return (
     <nav aria-label="Breadcrumb" className="mb-6">

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://champaranconsultancy.com/sitemap.xml
+Sitemap: https://yourusername.github.io/ccs-website/sitemap.xml

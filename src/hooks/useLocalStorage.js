@@ -17,7 +17,7 @@ export default function useLocalStorage(key, initialValue) {
       try {
         window.localStorage.setItem(key, JSON.stringify(resolved));
       } catch {
-        /* storage unavailable — keep in-memory value */
+        /* storage unavailable - keep in-memory value */
       }
       return resolved;
     });

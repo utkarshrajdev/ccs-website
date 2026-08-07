@@ -28,7 +28,7 @@ export default function Consultancy() {
         align="left"
         eyebrow="Services"
         title="Consultancy Services"
-        subtitle="Expert guidance for every step of your career — from your first resume to your first international offer."
+        subtitle="Expert guidance for every step of your career - from your first resume to your first international offer."
       />
 
       {loading && <SkeletonGrid count={4} className="grid gap-8 md:grid-cols-2" />}
@@ -74,7 +74,10 @@ export default function Consultancy() {
                     </div>
                   )}
 
-                  <Button to="/contact">
+                  <Button
+                    to={`/consultancy/enquire?service=${encodeURIComponent(service.title || '')}`}
+                    track={`consultancy_${service.title}`}
+                  >
                     {service.ctaText || 'Book a Consultation'} <FiArrowRight aria-hidden="true" />
                   </Button>
                 </div>
