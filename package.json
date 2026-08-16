@@ -6,7 +6,7 @@
   "description": "Champaran Consultancy Services - React + Vite website powered by Google Sheets CMS",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && node scripts/postbuild.js",
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
